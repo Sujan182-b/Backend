@@ -40,6 +40,9 @@ watchHistory:{
 password:{
     type:String,
     required:[true,'Password is required']
+},
+refreshToken:{
+    type:String
 }
 },
 {timestamps:true});
@@ -78,4 +81,4 @@ process.env.REFERSH_TOKEN_SCERET,
 }
 )
 }
-export const User = mongoose.model('User',userSchema)
+export default  User = mongoose.model('User',userSchema)
